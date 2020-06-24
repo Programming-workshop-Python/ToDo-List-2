@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<center>
+    <h2>{{ the_title }}</h2>
+
+    <form method='POST'>
+
+        <table>
+
+
+            <tr><td>New task:</td><td><input name='task_name' type='TEXT'
+
+            width='60'></td></tr>
+
+            <tr><td>Expiration Date:</td><td><input name='exp_date' type= datetime-local></td></tr>
+
+        </table>
+
+
+        <p><input type='SUBMIT' value='Create Task' name="action" formaction="/create_task"/>
+
+        <td><input type='SUBMIT' value='Show All Tasks'  name="action" formaction="/view_tasks"/></td></p>
+
+    </form>
+</center>
+{% endblock %}
+
+
+
+
+

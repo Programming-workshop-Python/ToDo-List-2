@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<center>
+
+    <h2><font size="5" color="red"> {{created_task}}</font> <font size="5" color="black" >:has created now </font> </h2>
+
+    <form method='POST'>
+
+        <p><input type='SUBMIT' value='Create New task' name="action" formaction="/entry"/></p>
+
+        <td><input type='SUBMIT' value='Show All Tasks'  name="action" formaction="/view_tasks"/></td>
+
+    </form>
+
+</center>
+
+{% endblock %}

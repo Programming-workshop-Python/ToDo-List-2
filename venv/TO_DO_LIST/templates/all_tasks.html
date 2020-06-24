@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<center>
+
+    <h2>ALL CURRENT TASKS</h2>
+
+    <form  method='POST'>
+
+        <div class="table-responsive">
+
+            {{ table_html | safe }}
+
+        </div>
+
+        <p><input type='SUBMIT' value='Create new task' name="action" formaction="/entry"/>
+
+        <td><input type='SUBMIT' value='Delete selected task' name="action" formaction="/view_tasks"/></td></p>
+
+
+    </form>
+
+</center>
+
+{% endblock %}
